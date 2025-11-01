@@ -1,0 +1,29 @@
+h2{
+    background-color: orange;
+    height: 300px;
+    width: 300px;
+
+    /*border-width: 10px;
+    border-style: groove;
+    border-color: darkgreen;*/
+
+    border: 10px groove green;
+
+    padding: 5px;
+
+    margin: 30px 10px;
+}
+
+h3{
+    background-color: pink;
+    border: 5px purple solid
+
+}
+
+p{
+    background-color: aqua;
+    border: 3px solid darkblue;
+    padding: 10px;
+    margin: 40px 20px;
+    border-radius: 20px;
+}   

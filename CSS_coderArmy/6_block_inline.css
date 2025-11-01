@@ -1,0 +1,61 @@
+span{
+    background-color: goldenrod;
+    padding: 40px 10px;
+    margin: 50px; 
+    /* to convert inline to block level
+    display: block;
+    */
+
+}
+
+h1 {
+
+    background-color: gold;
+    /*to make block level element behave like inline
+    display: inline;
+    */
+}
+
+h2 {
+    background-color: yellow;
+    height: 100px;
+    width: 250px;
+    padding: 40px 10px;
+    margin: 50px
+}
+
+/*
+
+block level element vs inline element
+
+1. h1 is block level element covering the entire length
+hence they always start from new line
+
+2. it has a default height and width which can be set
+
+3. every block level elements start in new line 
+
+Inline element ONLY allows HORIZONTAL PADDING & MARGIN
+
+NOTE : the background color in span tag will get modified 
+for vertical padding/margin BUT the span content doesn't 
+
+hence 
+
+padding-top/bottom & margin-top/bottom doesn't work
+
+Best of both worlds : 
+
+display: inline-block
+- the elements won't start in new line 
+- its height/width can be changed
+- vertical padding & margin will be available
+
+box-sizing: content-box (default)
+
+box-sizing: border-box 
+
+includes content, padding & border size in ht & wd attributes
+
+
+*/

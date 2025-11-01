@@ -1,0 +1,42 @@
+#yell_rect{
+    background-color: rgb(255, 255, 2);
+    height: 200px;
+    width: 400px;
+    position: relative;
+}
+
+#blu_box1, #blu_box2, #blu_rect1, #blu_rect2
+{
+    background-color: rgb(3, 93, 161);
+    position:absolute;
+}
+
+#blu_box1, #blu_box2{
+    height: 80px;
+    width: 80px;
+}
+
+#blu_box1{
+    left: 0px;
+    top: 0px;
+}
+
+#blu_box2{
+    left: 0px;
+    bottom: 0px;
+}
+
+#blu_rect1, #blu_rect2{
+    height: 80px;
+    width: 280px;
+}
+
+#blu_rect1{
+    right: 0px;
+    top: 0px;
+}
+
+#blu_rect2{
+    right: 0px;
+    bottom: 0px;
+}

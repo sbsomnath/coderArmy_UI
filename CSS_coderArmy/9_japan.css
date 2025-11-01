@@ -1,0 +1,16 @@
+#wh_rect{
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    position: relative;
+}
+
+#red_cir{
+    background-color: crimson;
+    height: 100px;
+    width: 100px;
+    position:absolute;
+    left: 150px;
+    bottom: 50px;
+    border-radius: 50%;
+}

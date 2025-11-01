@@ -1,0 +1,39 @@
+/* tag/element selector*/
+
+h1{
+    background-color: chocolate;
+}
+
+h2{
+    background-color:coral
+}
+
+/*id selector, note id has to be unique*/
+
+#Veg {
+    background-color: greenyellow;
+}
+
+/*class based selector*/
+
+.sel {
+    background-color: darkcyan;
+}
+
+/*group based selection*/
+
+h1 , .sel {
+    font-family: cursive;
+    font-size: 7vw; /*7% of screen size (view port width)*/
+}/*similarly we have viewport height vh*/
+/*based on immediate parent size*/
+h2 {
+    font-size: 2em;
+    /*else use percentage like 50% means half the immediate parent size*/
+}
+/*based on root element <html> size*/
+ul {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InlineCSS</title>
+    <title>ExternalCSS</title>
+    <link rel="stylesheet" href="./4_styler.css">
 </head>
 <body>
     <h1> Gym website</h1>
 
-    <h2 style="background-color: blueviolet;"> Exercizes</h2>
+    <h2> Exercizes</h2>
 
     <ul>
-        <li>shoulder</li>
+        <li class="sel">shoulder</li>
         <li>biceps</li>
         <li>leg</li>
         <li>back</li>
@@ -21,12 +22,12 @@
     <h2>Diet</h2>
 
     <ul>
-        <li>Veg:
+        <li id="Veg">Veg:
             <ol>
                 <li>
                     soyabeans
                 </li>
-                <li>
+                <li class="sel">
                     daal
                 </li>
                 <li>
@@ -39,7 +40,7 @@
                 <li>
                     fish
                 </li>
-                <li>
+                <li class="sel">
                     egg
                 </li>
             </ol>

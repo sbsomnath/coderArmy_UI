@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+    /*
+    brosers have default paddings and margins which 
+    can be eleminated by marking all default values of all
+    types of elements as 0 
+    */
+}
+
+h2{
+    background-color: coral;
+    position: relative; /*default is static*/
+    left: 100px; /*move left 100 px from original position in static case*/
+    bottom: 50px; /*move bottom 50 px from original position in static case*/
+    z-index: 1; /*to prevent being overlappeped
+    increased the z value by a positive number*/
+}
+
+h3{
+    background-color: crimson;
+    position: fixed; /*positions wrt user screen/ viewport*/
+    top: 0px;  /*like website titlebar, fixed unaffected by scrolling*/
+    left: 30px 
+}
+
+/*
+NOTE : relative reserves its original position and 
+doesn't allow any other element to swap with it
+but that's not the case in case of fixed position
+
+hence in case of h3 line original position,
+it gets occupied by h4 line
+
+but h2 line original position is never occupied
+*/
+
+h4{
+    background-color: pink;
+    position: sticky; /*positions wrt user screen/ viewport*/
+    top: 0px;  /*stick to the screen when its 0px from top 
+    when scrolling down, so that its always visible */
+}
+
+p{
+    background-color: maroon;
+    position: absolute;
+    left: 50px;
+    top: 300px;
+}
+
+/*relative is relative to its own original position
+whereas absolute is relative to its parent's positon 
+provided its relative/fixed/sticky like 
+in this case <div>/<body>. if that's not 
+present then it will take screen window as 
+reference position  
+
+/*relative & absolute are mostly used */
