@@ -1,0 +1,42 @@
+<!--thead/tbody/tfoot are just for good coding standards-->
+
+<table border="1">
+    <thead>
+        <tr> <!--tr*3-->
+            <th>Name</th>
+            <th>Role</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody
+        <tr>
+            <td>Rohit</td>
+            <td>Backend</td>
+            <td>$500</td>
+        </tr>
+        <tr>
+            <td>Som</td>
+            <td>Frontend</td>
+            <td>$700</td>
+        </tr>
+        <tr>
+            <td>Manager</td>
+            <td></td><!--this comes as blank-->
+            <td>$1200</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th colspan="2" rowspan="2">Total</th> <!--occupies 2 columns-->
+            <td rowspan="2">$2400</td>
+        </tr>
+        <tr>
+            <td>
+                <!--this row is just for rowspan purpose--> 
+            </td>
+        </tr>
+    </tfoot>
+    
+</table>
+

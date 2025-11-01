@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is our media website</h1>
+
+    <audio src="./audio.mp3" controls></audio>
+    <video src="./video.mp4" height="300px" controls></video>
+
+<!--there is a better way -->
+
+    <h2>Using media tags</h2>
+    <audio controls>
+        <source src="./audio.mp3" type="audio/mpeg">
+        <source src="./Recording.m4a" type="audio/m4a">
+        Your browser does not support the audio element.
+    </audio>
+
+    <br><br>
+
+    <video autoplay width="600" controls>
+        <source src="./video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <br><br>
+
+    <!--FOR YOUTUBE
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+
+    below is an example of a youtube shorts link : https://www.youtube.com/shorts/fvz1zxkzr48
+
+    ideally the last 11 characters should be used as VIDEO_ID
+
+    when link is like this : https://youtu.be/bQIPwkSfGZM?si=KcQ67924AnmhoL0X
+    the VIDEO_ID is bQIPwkSfGZM
+
+    else u can also write it as shown in the second iframe below, convert 'youtu.be/' to youtube.com/embed/
+    -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fvz1zxkzr48" frameborder="0" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bQIPwkSfGZM?si=KcQ67924AnmhoL0X" frameborder="0" allowfullscreen></iframe>
+
+
+</body>
+</html>

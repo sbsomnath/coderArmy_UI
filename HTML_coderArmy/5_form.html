@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>name:</label>
+        <input type="text" name="userName">
+        <br>
+        <br>
+        <label>age</label>
+        <input type="number" name="userAge">
+        <br>
+        <br>
+        <label>Password</label>
+        <input type="password" name="userPwd">
+        <br>
+        <br>
+
+        <label>Male</label>
+        <input type="radio" name="userGender" value="M">
+        <label for="fe">Female</label> 
+        <input type="radio" name="userGender" id="fe">
+
+        <!--"for=" helps in getting the radio selected based on 
+        the label (Female) being clicked, by matching the id value
+        Note: this can also be done for other types text/number/password-->
+        <br>
+        <br>
+
+        Language:
+        <br>
+        <br>
+
+        <label for="C++">C++</label>
+        <input type="checkbox" name="userSubjects" id="C++" value="C++">
+        <label for="java">java</label>
+        <input type="checkbox" name="userSubjects" id="java" value="java">
+        <label for="python">python</label>
+        <input type="checkbox" name="userSubjects" id="python" value="python">
+        
+        <br>
+        <br>
+        <br>
+        <input type="submit">
+
+    </form>
+</body>
+</html>
+
+<!-- when submitting the form with the name attribute i am mapping the 
+ value with the labels of the place where data is getting stored
+ url will have the details 
+http://127.0.0.1:3000/5_form.html?userName=a&userAge=1&userPwd=q&userGender=on
+ 
+NOTE : for gender the value is coming as 'on' instead of actual value
+this can't help as it will store the gender value as 'on' in DB
+
+hence we add value attribute 
+
+http://127.0.0.1:3000/5_form.html?userName=s&userAge=1&userPwd=1&userGender=M
+
+now gender value is coming as 'M' when male is selected
+
+using values for checkbox for the same reason as radio, else 'on' will be saved
+
+http://127.0.0.1:3000/5_form.html?userName=a&userAge=2&userPwd=a&userGender=M&userSubjects=java&userSubjects=python
+-->

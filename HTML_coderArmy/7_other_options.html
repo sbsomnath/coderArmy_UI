@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color, Range & Required Example</title>
+</head>
+<body>
+  <h2>Form Example</h2>
+
+  <form onsubmit="alert('Form submitted!'); return false;">
+    
+    <!-- Required text input -->
+    <label for="name">Your Name (required):</label><br>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <!-- Color picker -->
+    <label for="favcolor">Choose your favorite color:</label><br>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+    <br><br>
+
+    <!-- Range slider -->
+    <label for="volume">Volume level (0–100):</label><br>
+    <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+    <br><br>
+
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>

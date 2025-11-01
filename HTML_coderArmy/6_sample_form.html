@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+</head>
+<body>
+    <h1>University Registration Form</h1>
+    <br>
+    <p>Please fill out the form below to register</p>
+    <hr>
+    <form>
+        <h2>Personal Details</h2>
+
+        <label for="name">First Name</label>
+        <input type="text" name="name" id="name" placeholder="e.g. Arjun">
+        <br>
+        <br>
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" placeholder="e.g. Kumar">
+        <br><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+        <h4>Gender</h4>
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="dob" value="M">
+        <br><br>
+        
+        <h4>Upload your photo</h4>
+        <input type="file" name="fileName">
+        <br>
+        <hr>
+        <h2>Contact Information</h2>
+        <label for="email">Email Address</label>
+        <input type="email" name="userEmail" id="email" placeholder="abc@email.com">
+        <br><br>
+        <label for="phone">Phone Number</label>
+        <input type="number" name="userPhone" id="phone" placeholder="e.g. 1234567891">
+        <br><br>
+        <label for="addr">Mailing Address</label>
+        <br>
+        <textarea name="Address" id="addr" rows="4" cols="24" placeholder="Sreet, Address, City, State Zipcode"></textarea>
+
+        <hr>
+
+        <h2> Academic Information</h2>
+        <label>Select your course :</label>
+        <br>
+        <select name="course">
+            <option value="" disabled selected>Choose a course</option>
+            <!--
+            value="": Ensures no real value is submitted if this option is chosen.
+            disabled: Prevents users from selecting it as a valid option.
+            selected: Makes it appear as the default visible option.
+            required (optional): Forces the user to select a real course before submitting.
+            -->    
+            <option value="btech">B.Tech</option>
+            <option value="mtech">M.Tech</option>
+            <option value="mba">MBA</option>
+            <option value="msc">M.Sc</option>
+        </select>
+
+        <br><br>
+        Extracurricular Interests:
+        <br>
+        <input type="checkbox" name="userInterest" id="sports" value="sports">
+        <label for="sports">Sports</label>
+        <!--input followed by label changes the order of display-->
+        <br>
+        <input type="checkbox" name="userInterest" id="music" value="music">
+        <label for="music">Music</label>
+
+        <hr>
+
+        <h2>Create Account</h2>
+
+        <label for="pwd">Create a password</label>
+        <input type="password" name="userPassword" id="pwd" placeholder="Enter a strong password">
+        <br><br>
+        <label for="ques">Security Question</label> 
+        <select name="securityQuestion" id="ques">
+            <option value="" disabled selected>Select a question</option>
+            <option value="pet">What is your pet's name?</option>
+            <option value="school">What is your first school's name?</option>
+            <option value="city">In which city were you born?</option>
+        </select>
+        <br><br>
+        <label for="ans">Your Answer</label>
+        <input type="text" name="userAnswer" id="ans" placeholder="Your answer">
+
+        <br><br>
+        <input type="checkbox" name="terms" id="terms">
+        <label for="terms">I agree to the terms and conditions</label>  
+
+        <br><br>    
+        <input type="submit" value="Register">
+        <!--note u can also use button tag-->
+        <button type="submit">Clear Form</button>
+    </form>
+</body>
+</html>
